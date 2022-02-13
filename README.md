@@ -123,15 +123,21 @@ cover_color: rgb(255, 255, 255)
 You can set your social links in `_data/social.yml`. You can custom titles, URLs, and icons (only support [Font Awesome](https://fontawesome.com/) currently), for example:
 
 ```yml
+- title: GitHub
+  url: https://github.com/CharlesbrownK
+  icon: fab fa-github
 - title: Email
-  url: mailto://vszhub@gmail.com
+  url: mailto://charlesbrownk0418@gmail.com
   icon: fas fa-envelope
 - title: Twitter
-  url: https://twitter.com/vszhub
+  url: https://twitter.com/intent/follow?screen_name=Junghoo47593127
   icon: fab fa-twitter
-- title: GitHub
-  url: https://github.com/vszhub/not-pure-poole
-  icon: fab fa-github
+- title: Instagram
+  url: https://www.instagram.com/junghoon_kim04/
+  icon: fab fa-instagram
+- title: Stack Overflow
+  url: https://stackoverflow.com/users/18185983/charlesbrownk
+  icon: fab fa-stack-overflow
 ```
 
 ### Enabling Posts Archive
@@ -139,6 +145,9 @@ You can set your social links in `_data/social.yml`. You can custom titles, URLs
 Not Pure Poole supports posts archive by date, categories, and tags. For enabling that, you should put some data like below into `_data/archive.yml`:
 
 ```yml
+- type: blog
+  title: Blog
+  url: /
 - type: dates
   title: Dates
   url: /dates/
