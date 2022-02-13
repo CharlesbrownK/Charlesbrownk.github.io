@@ -26,7 +26,6 @@ So, this page is where I write what you continue to write on this blog or create
 ### List
 
 - <strong>Database Structure and SQL<strong>
-- <strong>Add Comments Function</strong>
 - <strong>Discord.py</strong>
 - <strong>[DARK/LIGHT THEME SWITCH](https://www.youtube.com/watch?v=kZiS1QStIWc)</strong>
 
