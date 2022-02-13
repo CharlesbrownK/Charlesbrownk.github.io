@@ -1,18 +1,6 @@
-# Not Pure Poole <!-- omit in toc -->
+# Charlesbrownk.github.io <!-- omit in toc -->
 
-<a href="https://jekyll-themes.com">
-  <img src="https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
-
-**Not Pure Poole** is a simple, beautiful, and powerful Jekyll theme for blogs. It is built on [Poole](https://github.com/poole/poole) and [Pure](https://purecss.io/).
-
-> Poole explains that Jekyll has been asking for a particular chemical for days now but every time it has been fetched for him he rejects it as **not pure**. Poole also explains that he caught a glimpse of the man inside and he looked barely human.
->
-> -- <a href="https://www.bbc.co.uk/bitesize/guides/zbtjnrd/revision/6"><cite>The death of Jekyll</cite></a>
-
------
-
-See Not Pure Poole in action with [the demo site](https://vszhub.github.io/not-pure-poole/).
+See blog in action with [the live site](https://charlesbrownk.github.io/).
 
 ![Screenshot](screenshot.png)
 
@@ -82,7 +70,7 @@ You can choose one of the following methods to install Not Pure Poole:
 
 ## Usage
 
-You can read this [example post](https://vszhub.github.io/not-pure-poole/2020/09/29/welcome-to-not-pure-poole/) to see the rendering result in this theme, and put the [source](_posts/2020-09-29-welcome-to-not-pure-poole.md) aside to learn some basic usages.
+You can read this [post](https://charlesbrownk.github.io/nlp/2022/02/11/What-is-Embedding/) to see the rendering result in this theme, and put the [source](_posts/2022-02-12-What-is-Embedding.md) aside to learn some basic usages.
 
 ### Configuration
 
@@ -209,4 +197,4 @@ To add a custom directory to your theme-gem, please edit the regexp in `not-pure
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [GPL-3.0 License](./LICENSE).
