@@ -105,6 +105,8 @@ You can create a file `_data/navigation.yml` to configure links to some pages. F
   url: /
 - title: About
   url: /about/
+- title: Contact
+  url: /contact/
 ```
 
 ### Customizing Cover Image
