@@ -1,0 +1,18 @@
+- title: GitHub
+  url: https://github.com/CharlesbrownK
+  icon: fab fa-github
+- title: Email
+  url: mailto://charlesbrownk0418@gmail.com
+  icon: fas fa-envelope
+- title: Twitter
+  url: https://twitter.com/intent/follow?screen_name=Junghoo47593127
+  icon: fab fa-twitter
+- title: Instagram
+  url: https://www.instagram.com/junghoon_kim04/
+  icon: fab fa-instagram
+- title: Stack Overflow
+  url: https://stackoverflow.com/users/18185983/charlesbrownk
+  icon: fab fa-stack-overflow
+- title: Feed
+  url: /feed.xml
+  icon: fas fa-rss

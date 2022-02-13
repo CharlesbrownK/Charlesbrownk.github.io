@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-02-13T15:54:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CHKhub</title><subtitle>The homepage of Charlesbrown K</subtitle><author><name>Charlesbrown K</name><email>charlesbrownk0418@gmail.com</email></author><entry><title type="html">임베딩이란? [Focusing on one-hot encoding]</title><link href="http://localhost:4000/nlp/2022/02/12/What-is-Embedding/" rel="alternate" type="text/html" title="임베딩이란? [Focusing on one-hot encoding]" /><published>2022-02-12T01:15:00+09:00</published><updated>2022-02-12T03:38:00+09:00</updated><id>http://localhost:4000/nlp/2022/02/12/What-is-Embedding</id><content type="html" xml:base="http://localhost:4000/nlp/2022/02/12/What-is-Embedding/"><![CDATA[<p class="message"><strong>Embedding</strong>이란, 사람이 쓰는 자연어를 기계가 이해할 수 있는 숫자형태인 vector로 바꾼 결과 혹은 그 일련의 과정 전체를 의미합니다.</p>
+
+<p align="center">
+	<img src="https://images.velog.io/images/ekjh0418/post/76819494-ebe0-40ee-804b-488d94908d40/embedding.png" width="70%" />
+</p>
+
+<p>최근들어, <strong>사람과 소통할 수 있는 능력을 갖춘 인공지능</strong>이 증가하고 있습니다. 대표적으로 우리 핸드폰에 있는 <strong>Siri</strong> 나 <strong>빅스비</strong> 등을 예로 들 수 있겠군요. 그런데 가끔씩 이러한 인공지능들은 어떻게 사람의 말을 인식하는지 의문이 들곤 합니다. 그래서 이러한 궁금증을 해결하기 위해서 자연어 처리 분야인 임베딩의 기초적인 부분을 이 글을 통해 알아보고자 합니다.</p>
+
+<h2 id="-what-is-embedding">🙋 What is Embedding?</h2>
+
+<p align="center">
+  <img src="https://images.velog.io/images/ekjh0418/post/2d4810ed-06ec-46e7-b394-b014fb4ce66e/computer.jpg" width="95%" />
+</p>
+
+<p>컴퓨터는 사람들이 일상생활 속에서 사용하는 언어(<a href="https://ko.wikipedia.org/wiki/%EC%9E%90%EC%97%B0%EC%96%B4">자연어</a>)를 직접 그 형태로 처리할 수 없습니다. 컴퓨터는 <strong>수치 연산</strong>만 가능하기 때문에 <strong>자연어를 숫자나 벡터 형태로 변환</strong>해야 합니다.</p>
+
+<p>이러한 과정을 자연어 처리 분야에서는 <strong>임베딩(Embedding)</strong>이라고 부릅니다.
+즉, 임베딩(Embedding)은 <mark><ins>단어나 문장을 수치화하여 벡터 공간으로 표현하는 과정</ins></mark>을 의미합니다.</p>
+
+<p>임베딩은 말뭉치(어절)에 따라 벡터화하기 때문에 문법적인 정보가 포함되어 있습니다. 따라서 임베딩 품질이 좋다면, 단순한 인공지능 모델로도 훌륭한 결과를 얻을 수 있습니다.</p>
+
+<p>임베딩은 크게 문장 임베딩과 단어 임베딩으로 나눌 수 있습니다.</p>
+
+<hr />
+
+<h2 id="-sentence-embedding">🐣 Sentence Embedding?</h2>
+
+<p><strong>문장 임베딩</strong>은 <mark><ins>전체 문장의 전체 문장의 흐름을 파악해 개별 단어를 벡터로 표현하는 방법</ins></mark>입니다. 따라서 문맥적 의미를 지니다는 장점을 지닙니다. 이런 이유로 밑에서 설명드릴 단어 임베딩 보다 품질이 좋으며, 상용 시스템에 많이 사용됩니다.</p>
+
+<p>하지만, 문장 임베딩하기 위해서 많은 문장 데이터가 필요하며 학습하는데 많은 비용이 들어갑니다.</p>
+
+<h2 id="-word-embedding">🐤 Word Embedding?</h2>
+
+<p>단어 임베딩은 개별 단어를 벡터로 표현하는 방법입니다. 단어 임베딩의 예시를 들어보겠습니다.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="s1">'학교'</span>, <span class="s1">'컴퓨터'</span>, <span class="s1">'집'</span> 3단어만 있고 순서대로 1번, 2번, 3번이라면, 
+    단어 임베딩은 학교를 <span class="o">(</span>1,0,0<span class="o">)</span>, 컴퓨터를 <span class="o">(</span>0,1,0<span class="o">)</span>, 집을 <span class="o">(</span>0,0,1<span class="o">)</span> 로 
+    나타냅니다. 이를 one-hot encoding이라고 합니다. 
+    단어 문서 행렬의 각 행, 
+    즉 문서를 나타내는 벡터는 그 문서를 이루는 단어 벡터들을
+    모두 더한 것과 같습니다.
+</code></pre></div></div>
+
+<p>단어 임베딩의 경우, 동음이의어에 대한 구분을 하지 않기 때문에 의미가 다르더라도 단어의 형태가 같다면 동일한 벡터 값으로 표현되는 단점이 있습니다.</p>
+
+<p>하지만, 이러한 단어 임베딩도 문장 임베딩에 비해 학습 방법이 간단해 여전히 실무에서 많이 사용한다는 장점아닌 장점이 있습니다.</p>
+
+<hr />
+
+<h2 id="-what-is-one-hot-encoding">🐥 What is One-hot Encoding?</h2>
+
+<p><strong>원-핫 인코딩(one-hot encoding)</strong>은 <mark><ins>단어를 숫자 벡터로 변환하는 가장 기본적인 방법</ins></mark>입니다.</p>
+
+<p>이름 자체에서도 알 수 있듯이 요소들 중 단 하나의 값만 1이고 나머지 요솟값은 0인 인코딩을 의미합니다.</p>
+
+<p>원-핫 인코딩으로 나온 결과를 원-핫 벡터라고 부르며, 전체 요소 중 단 하나의 값만 1이기 때문에 희소(sparse) 벡터라고도 합니다.</p>
+
+<p>여러분들은 이미 위의 사례를 통해서 원-핫 인코딩을 접해보았습니다.
+아래 이미지를 통해서 쉽게 이해해 봅시다.</p>
+
+<p align="center">
+	<img src="https://images.velog.io/images/ekjh0418/post/61ac07c9-1377-4e1c-825e-0db5581f6e48/one-hot-encoding-concept.png" width="85%" />
+</p>
+
+<p>원-핫 인코딩을 하기 위해서는 <strong>단어 집합</strong>이라 불리는 사전을 먼저 만들어야 합니다.</p>
+
+<p>여기서 사전은 <mark><ins>말뭉치에서 나오는 서로 다른 단어의 집합</ins></mark>을 의미합니다. 
+말뭉치(어절)에 존재하는 모든 단어의 수가 원-핫 벡터의 차원을 결정합니다.</p>
+
+<p>예를 들어 100개의 단어가 존재한다면, 원-핫 벡터의 크기는 100차원이 됩니다. 
+사전 구축이 되었다면 사전 내 단어 순서대로 고유한 인덱스 번호를 부여합니다. 
+단어의 인덱스 번호가 원-핫 인코딩에서 1의 값을 가지는 요소의 위치가 됩니다.</p>
+
+<p><strong>백문이 불여일견</strong>, 파이썬(Python)으로 직접 구현해 보겠습니다.</p>
+
+<h3 id="-implementation">👓 Implementation</h3>
+
+<p>우선 KoNLPy 모듈을 설치해줍니다.</p>
+
+<h4 id="window">Window</h4>
+<p><code>
+ pip install konlpy
+</code></p>
+
+<h4 id="mac">Mac</h4>
+<p><code>
+  $ pip3 install konlpy    # Python 3.x
+</code></p>
+
+<h4 id="ubuntu">Ubuntu</h4>
+<p><code>
+  $ sudo apt-get install python3-dev; pip3 install konlpy
+</code></p>
+
+<p>다음으로 직접 코드를 입력하며 이해해봅시다.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">konlpy.tag</span> <span class="kn">import</span> <span class="n">Komoran</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+
+<span class="c1"># Komoran 형태소 분석기 객체 생성
+# Komoran morphology analysis object creation
+</span><span class="n">komoran</span> <span class="o">=</span> <span class="n">Komoran</span><span class="p">()</span>
+<span class="n">text</span> <span class="o">=</span> <span class="s">"오늘 날씨는 구름이 많아요."</span>
+
+<span class="c1"># 명사만 추출
+# Extract only nouns
+</span><span class="n">nouns</span> <span class="o">=</span> <span class="n">komoran</span><span class="p">.</span><span class="n">nouns</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">nouns</span><span class="p">)</span>
+
+<span class="c1"># 단어 사전 구축 및 단어별 인덱스 부여
+# Build word dictionary and give index by word
+</span><span class="n">dics</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">nouns</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dics</span><span class="p">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">dics</span><span class="p">[</span><span class="n">word</span><span class="p">]</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dics</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">dics</span><span class="p">)</span>
+
+<span class="c1"># One-Hot-Encoding
+</span><span class="n">nb_classes</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dics</span><span class="p">)</span>
+<span class="n">targets</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">dics</span><span class="p">.</span><span class="n">values</span><span class="p">())</span>
+<span class="n">one_hot_targets</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">eye</span><span class="p">(</span><span class="n">nb_classes</span><span class="p">)[</span><span class="n">targets</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">one_hot_targets</span><span class="p">)</span></code></pre></figure>
+
+<p>이를 실행한다면, 아래와 같은 결과가 뜸을 알 수 있습니다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['오늘', '날씨', '구름']
+{'오늘': 0, '날씨': 1, '구름': 2}
+[[1. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 1.]]
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="-finally">💣 Finally..</h2>
+
+<p>원-핫 인코딩의 영우 간단한 구현 방법에 비해 좋은 성능을 가지기 때문에 많은 사람들에 의해서 사용되고 있습니다.</p>
+
+<p>하지만, 원-핫 벡터의 경우 단순히 단어의 순서에 의한 인덱스 값은 기반으로 인코딩된 값이기 때문에 단어의 의미나 유사한 단어와의 관계를 담고 있지 않습니다.</p>
+
+<p>또한, 단어 사전의 크기가 커짐에 따라 원-핫 벡터의 차원도 커지는데, 이때 메모리 낭비와 계산의 복잡도가 커집니다. 그리고 원-핫 벡터는 대부분 요소가 0의 값을 가지고 있으므로 비효율적입니다.</p>
+
+<hr />
+
+<h2 id="-next-post-notice">💥 Next Post Notice</h2>
+
+<p>다른 워드 임베딩의 종류 중 하나인 Word2Vec에 대해 알아볼 것입니다!</p>]]></content><author><name>Charlesbrown K</name></author><category term="NLP" /><category term="python" /><category term="nlp" /><summary type="html"><![CDATA[Embedding이란, 사람이 쓰는 자연어를 기계가 이해할 수 있는 숫자형태인 vector로 바꾼 결과 혹은 그 일련의 과정 전체를 의미합니다.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/avatar.png" /><media:content medium="image" url="http://localhost:4000/assets/img/avatar.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Welcome to My CHKhub!</title><link href="http://localhost:4000/essays/2022/01/08/welcome-to-my-devblog/" rel="alternate" type="text/html" title="Welcome to My CHKhub!" /><published>2022-01-08T11:17:00+09:00</published><updated>2022-01-13T21:23:00+09:00</updated><id>http://localhost:4000/essays/2022/01/08/welcome-to-my-devblog</id><content type="html" xml:base="http://localhost:4000/essays/2022/01/08/welcome-to-my-devblog/"><![CDATA[<p class="message">Welcome to <strong>CHKhub</strong>! This is a Tech Blog where I post what I learned while studying and how to solve problems.</p>
+
+<p>In fact, I’m just a <strong>High School Student Developer</strong>, who have started interest in Python on 2021. However, my passion for development has ignited, so I have reached a level where I can proceed with personal project within a year.</p>
+
+<p><strong>However</strong>, as I continued to code, I felt the need to organize what I had learned and further solve complex structures.</p>
+
+<h2 id="todolist">ToDoList</h2>
+
+<p>So, this page is where I write what you continue to write on this blog or create new features for.</p>
+
+<h3 id="list">List</h3>
+
+<ul>
+  <li><strong>Database Structure and SQL<strong></strong></strong></li>
+  <li><strong>Add Comments Function</strong></li>
+  <li><strong>Discord.py</strong></li>
+  <li><strong><a href="https://www.youtube.com/watch?v=kZiS1QStIWc">DARK/LIGHT THEME SWITCH</a></strong></li>
+</ul>
+
+<!--   
+1. [생활코딩 - Database](https://opentutorials.org/course/195/1467)
+2. [SQL tutorial Youtube](https://www.youtube.com/watch?v=3J0n7BABEsU)
+3. [SQLite3](https://docs.python.org/ko/3/library/sqlite3.html)
+4. [Python Intermediate Tutorial #8 - Database Programming](https://www.youtube.com/watch?v=lFRMdGfo_XA)
+5. [SQLite Databases With Python - Full Course](https://www.youtube.com/watch?v=byHcYRpMgI4)
+6. [Python SQLite Tutorial: Complete Overview - Creating a Database, Table, and Running Queries](https://www.youtube.com/watch?v=pd-0G0MigUA)
+ -->
+
+<h2 id="you-have-to-notice">You have to notice!!</h2>
+
+<p>Since I’m <mark>Korean</mark>, most of my Devlog posts will be in Korean. If you are not a Korean speaker, please use the self-translation function of the web browser where you entered my blog.</p>]]></content><author><name>Charlesbrown K</name></author><category term="Essays" /><category term="welcome" /><category term="blog" /><summary type="html"><![CDATA[Welcome to CHKhub! This is a Tech Blog where I post what I learned while studying and how to solve problems.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/avatar.png" /><media:content medium="image" url="http://localhost:4000/assets/img/avatar.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
