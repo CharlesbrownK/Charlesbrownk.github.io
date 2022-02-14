@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to My CHKhub!
-categories: Essays
+categories: Welcome
 tags:
 - welcome
 - blog
