@@ -36,13 +36,13 @@ example print:
 ## 접근법
 우선 바로 고양이 형태를 **```print()```** 해주자.
 
-{% highlight python linenos %}
+```
 print("\    /\
 \    /\
  )  ( ')
 (  /  )
  \(__)|")
-{% endhighlight %}
+```
 
  그런데 실행 시 오류가 발생한다.
 ``` 
