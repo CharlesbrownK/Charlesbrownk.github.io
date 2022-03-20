@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Baekjoon 1000
+title: Baekjoon problem 1000
 categories: BAEKJOON
 tags:
 - BAEKJOON
 - Algorithm
 - Python
-date: 2022-03-20 15:17 +0800
-last_modified_at: 2022-03-21 20:23 +0800
+date: 2022-03-19 15:17 +0800
+last_modified_at: 2022-03-20 14:31 +0800
 toc: true
 comment: true
 ---
