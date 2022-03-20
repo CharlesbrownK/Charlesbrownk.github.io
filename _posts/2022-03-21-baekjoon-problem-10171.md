@@ -77,6 +77,28 @@ print("""\    /\
 
 우선 첫번째로 **```\```** 가 문제다. 파이썬에서 **```\```** 은 어떻게 사용될까?
 
+### \
+**```\```** 는 아래의 방법처럼 활용이 가능하다.
+
+  - 줄바꿈 ```print(\n)```
+  - 출력될 문자열 내의 따음표 출력 ```print(\"Hello World\")```
+  - 커서를 맨앞으로 이동 ```print("Red Apple\rPine")```
+  - 백스페이스 ```print("Redd\bApple")```
+  - Tab ```print(Red\tApple)```
+
+그렇다면 **```\```** 출력을 어떻게 할까?
+우선 아래처럼 입력해보자.
+```
+print("\")
+
+>>>   File "c:/Users/Desktop/cat.py", line 1
+        print("\")
+                 ^
+    SyntaxError: EOL while scanning string literal
+```
+
+위와 같은 오류를 겪을 수 있을 것이다.
+
 ## code
 
 {% highlight python linenos %}
