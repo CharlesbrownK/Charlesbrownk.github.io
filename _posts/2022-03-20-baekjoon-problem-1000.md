@@ -11,6 +11,7 @@ last_modified_at: 2022-03-21 20:23 +0800
 toc: true
 comment: true
 ---
+
 This article is a solution to the Baekjun problem.
 {: .message }
 
