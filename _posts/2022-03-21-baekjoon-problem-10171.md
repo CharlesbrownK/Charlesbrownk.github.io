@@ -18,7 +18,7 @@ This article is a solution to the Baekjun problem.
 # 백준 10171번 문제 해결법
 <hr />
 ## 백준 10171번 문제
-
+<hr />
 ### 문제
 
 <mark>아래 예제와 같이 고양이를 출력하시오.</mark>
@@ -32,7 +32,7 @@ example print:
 (  /  )
  \(__)|
 ```
-
+<hr />
 ## 접근법
 우선 바로 고양이 형태를 **```print()```** 해주자.
 
