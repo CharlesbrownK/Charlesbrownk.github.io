@@ -26,12 +26,12 @@ This article is a solution to the Baekjun problem.
 ### 출력
 
 example print:
-<mark>
+```
 \    /\
  )  ( ')
 (  /  )
  \(__)|
-</mark>
+```
 
 ## 접근법
 우선 바로 고양이 형태를 **```print()```** 해주자.
