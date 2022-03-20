@@ -21,19 +21,17 @@ This article is a solution to the Baekjun problem.
 
 ### 문제
 
-```
-아래 예제와 같이 고양이를 출력하시오.
-```
+<mark>아래 예제와 같이 고양이를 출력하시오.</mark>
 
 ### 출력
 
 example print:
-```
+<mark>
 \    /\
  )  ( ')
 (  /  )
  \(__)|
-```
+</mark>
 
 ## 접근법
 우선 바로 고양이 형태를 **```print()```** 해주자.
@@ -48,10 +46,10 @@ print("\    /\
 
  그런데 실행 시 오류가 발생한다.
 ``` 
- >   File "c:/Users/Desktop/cat.py", line 3
-    )  ( ')
-          ^
-  SyntaxError: EOL while scanning string literal
+ >>>   File "c:/Users/Desktop/cat.py", line 3
+      )  ( ')
+            ^
+    SyntaxError: EOL while scanning string literal
 ```
 EOL 에러는 흔히 오타오류이다. 그런데 저 기호는 오타가 아니라 고양이 모양인데..
 파이썬을 처음 해본 것이라면, 여기서 막힐 수 있다.
