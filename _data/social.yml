@@ -13,6 +13,6 @@
 - title: Stack Overflow
   url: https://stackoverflow.com/users/18185983/charlesbrownk
   icon: fab fa-stack-overflow
-- title: Feed
-  url: /feed.xml
-  icon: fas fa-rss
+- title: Home
+  url: https://charlesbrownk.netlify.app/
+  icon: fas fa-briefcase
