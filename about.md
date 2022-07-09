@@ -34,17 +34,15 @@ I'm a highschool student now! I started studying Python in 2021 and I know there
 <hr>
 <h3> My Works 💻 </h3>
 
-<p align="center">
-  <a href="https://github.com/CharlesbrownK/CNN-based-Road-Detection">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=charlesbrownk&repo=CNN-based-Road-Detection&theme=moltack&show_owner=True">
-  </a>
-  <a href="https://github.com/CharlesbrownK/py_GTA5">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=charlesbrownk&repo=py_GTA5&theme=moltack&show_owner=True">
-  </a>
-  <a href="https://github.com/CharlesbrownK/Python_Web_Crawlings">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=charlesbrownk&repo=Python_Web_Crawlings&theme=moltack&show_owner=True">
-  </a>
-</p>
+<a href="https://github.com/CharlesbrownK/CNN-based-Road-Detection">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=charlesbrownk&repo=CNN-based-Road-Detection&theme=moltack&show_owner=True">
+</a>
+<a href="https://github.com/CharlesbrownK/py_GTA5">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=charlesbrownk&repo=py_GTA5&theme=moltack&show_owner=True">
+</a>
+<a href="https://github.com/CharlesbrownK/Python_Web_Crawlings">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=charlesbrownk&repo=Python_Web_Crawlings&theme=moltack&show_owner=True">
+</a>
 <hr>
 <h3> Purpose of My Site 📐 </h3>
 
