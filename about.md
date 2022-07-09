@@ -10,9 +10,9 @@ permalink: /about/
 <hr>
 <h3> Introduction </h3>
 
-- 👀 I’m interested in Python and Java.
-- 🌱 I’m currently learning Python, MySQL.
-- 🔧 The skills I have are Python, MySQL and HTML.
+- 👀 I’m interested in Python and Scikit-learn.
+- 🌱 I’m currently learning Linear, Logistic regression, and AI technology stuff.
+- 🔧 The skills I have are Python, HTML, and AI stuff.
 - 🔥 I want to become a data scientist who can handle servers and databases.
 
 I'm a highschool student now! I started studying Python in 2021 and I know there is still a lot more to learn. I know that I'm not actually good at writing codes and my codes have tons of problems, so if you find a problem that have to fix in codes, Please don't hesitate to send us a PR. I'd appreciate it!
@@ -22,11 +22,6 @@ I'm a highschool student now! I started studying Python in 2021 and I know there
 <div style="float:left; padding:5px;">
   <a href="https://code.visualstudio.com/">
     <img alt="IDE" src="https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white">
-  </a>
-</div>
-<div style="float:left; padding:5px;">
-  <a href="https://www.sublimetext.com/">
-    <img alt="Tex Editor" src="https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=important">
   </a>
 </div>
 <div style="float:left; padding:5px;">
